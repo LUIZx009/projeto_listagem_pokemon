@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #195CE4;
+    color: white
+}
+
+body.modo-escuro {
+    background-color: #051432;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao_pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+main .cartao_pokemon {
+    background-color: #051432;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao_pokemon:hover {
+    background-color: #195CE4;
+}
+
+.modo-escuro .cartao_pokemon {
+    background-color: #195CE4;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.modo-escuro .cartao_pokemon:hover {
+    background-color: #051432;
+}
+
+main .cartao_pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+main .cartao_pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao_pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao_pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao_pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #057c1d;
+}
+
+.veneno {
+    background-color: #400350;
+}
+
+.fogo {
+    background-color: #da3107;
+}
+
+.água {
+    background-color: #548af7;
+}
+
+.inseto {
+    background-color: #04D30A;
+}
+
+main .descricao-do-pokemon {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
